@@ -12,9 +12,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 450px;
+  margin-top: 150px;
   color: #11ce3a;
-  white-space: pre;
   font-size: 15px;
   text-align: center;
   animation: textColor 5s infinite;
@@ -33,13 +32,14 @@ body {
 }
 
 .container {
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
   display: flex;
   justify-content: space-around;
   text-align: center;
 }
 
 .navigation_buttons {
-  font-family: "Roboto", sans-serif;
   text-decoration: none;
   margin: 10px;
   color: #11ce3a;
