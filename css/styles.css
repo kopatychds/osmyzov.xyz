@@ -1,0 +1,39 @@
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #232323;
+	font-family: 'Libre Baskerville', serif;
+	
+}
+
+a {
+    margin-right: 8px;
+    text-decoration: none;
+    color: #f2f2f2;
+    transition: all 0.2s linear;
+}
+
+a:hover {
+	color: #6D77D0;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+.container {
+	width: 80%;
+	margin: 15% auto;
+}
+
+.mtxt {
+	color: #f2f2f2;
+	text-align: center;
+	font-size: 72px;
+}
+
+.mtxt nav {
+	font-size: 16px;
+}
