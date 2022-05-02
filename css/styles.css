@@ -24,9 +24,9 @@ a:hover {
 }
 
 .container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	margin-top: 50%;
+	display: grid;
+	place-items: center;
 }
 
 .mtxt {
