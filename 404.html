@@ -1,36 +1,50 @@
+<!-- сделано кривыми руками осмузова на тайлвинде :) -->
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark">
   <head>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://dev.osmuzov.xyz/styles/404.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>oops...</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
+    <title>osmuzov</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        content: ["./src/**/*.{html,js}"],
+        theme: {
+          extend: {},
+        },
+        plugins: [],
+      };
+      console.warn("Да-да, иди нахуй тайлвинд!");
+    </script>
+    <script>
+      const changeTheme = () => {
+        const html = document.querySelector(":root");
+        const theme = html.getAttribute("class");
+        html.setAttribute("class", `${theme === "dark" ? "light" : "dark"}`);
+      };
+    </script>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
-    <pre class="pnf">
-                                                                                                                                                     
-                                       
-        ,--,                      ,--, 
-      ,--.'|    ,----..         ,--.'| 
-   ,--,  | :   /   /   \     ,--,  | : 
-,---.'|  : '  /   .     : ,---.'|  : ' 
-;   : |  | ; .   /   ;.  \;   : |  | ; 
-|   | : _' |.   ;   /  ` ;|   | : _' | 
-:   : |.'  |;   |  ; \ ; |:   : |.'  | 
-|   ' '  ; :|   :  | ; | '|   ' '  ; : 
-\   \  .'. |.   |  ' ' ' :\   \  .'. | 
- `---`:  | ''   ;  \; /  | `---`:  | ' 
-      '  ; | \   \  ',  /       '  ; | 
-      |  : ;  ;   :    /        |  : ; 
-      '  ,/    \   \ .'         '  ,/  
-      '--'      `---`           '--'   
-                                       </pre
-    >
-    <p class="text">
-      <span>Page Not Found :(<br> Please return to <a class="navigation_buttons" href="/">main page</a></span>
-    </p>
+  <body class="dark:bg-slate-900 block h-full text-black dark:text-white">
+    <div class="lg:mt-5 lg:mb-5 lg:container mx-auto bg-gray-50 dark:bg-slate-800 rounded-md shadow-md">
+      <div class="flex flex-col p-8">
+        <header class="flex justify-between items-center mb-5">
+          <div class="lg:text-5xl text-3xl">
+            <strong>Ты чо тут делаешь?</strong>
+          </div>
+          <button
+            onclick="changeTheme()"
+            class="text-xl hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">Это чё?</button>
+        </header>
+        <main class="flex flex-col gap-8">
+          <div class="text-3xl dark:text-gray-400 text-gray-600">вали обратно на<a class="dark:text-white text-black" href="/">мейн</a> страницу
+          </div>
+        </main>
+      </div>
+    </div>
   </body>
 </html>

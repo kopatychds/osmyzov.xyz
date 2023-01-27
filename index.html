@@ -1,23 +1,103 @@
+<!-- сделано кривыми руками осмузова на тайлвинде :) -->
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>osmuzov</title>
-	<link rel="stylesheet" href="/css/styles.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-</head>
-<body>
-	<header>
-		<div class="container">
-			<div class="mtxt">
-				osmuzov
-				<nav>
-					<a href="https://discord.gg/UBUNnaYB3n">DISCORD</a>
-				</nav>
-			</div>
-		</div>
-	</header>
-</body>
+<html class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
+    <title>osmuzov</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        content: ["./src/**/*.{html,js}"],
+        theme: {
+          extend: {},
+        },
+        plugins: [],
+      };
+      console.warn("Да-да, иди нахуй тайлвинд!");
+    </script>
+    <script>
+      const changeTheme = () => {
+        const html = document.querySelector(":root");
+        const theme = html.getAttribute("class");
+        html.setAttribute("class", `${theme === "dark" ? "light" : "dark"}`);
+      };
+    </script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="dark:bg-slate-900 block h-full text-black dark:text-white">
+    <div
+      class="xl:mt-5 xl:mb-5 xl:container mx-auto bg-gray-50 dark:bg-slate-800 rounded-md shadow-md">
+      <div class="flex flex-col p-8">
+        <header class="flex justify-between items-center mb-5">
+          <div class="lg:text-5xl text-3xl"><strong>Привет 👋</strong></div>
+          <button
+            onclick="changeTheme()"
+            class="text-xl hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">Это чё?</button>
+        </header>
+        <main class="flex flex-col gap-8">
+          <div class="text-3xl dark:text-gray-400 text-gray-600">
+            Я осмузов,<br />
+            ээм, мне ейтин годиков,<br />
+            <code><i>долбаеб.</i></code>
+            <br /><br />Заполню страницу лорем ипсум, хули.<br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            natus earum consectetur sunt quidem quisquam voluptatibus asperiores
+            doloremque, incidunt accusamus quo eaque iure eos necessitatibus
+            illo architecto non dolor quos?<br /><br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            natus earum consectetur sunt quidem quisquam voluptatibus asperiores
+            doloremque, incidunt accusamus quo eaque iure eos necessitatibus
+            illo architecto non dolor quos?<br /><br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+            natus earum consectetur sunt quidem quisquam voluptatibus asperiores
+            doloremque, incidunt accusamus quo eaque iure eos necessitatibus
+            illo architecto non dolor quos?<br /><br />
+          </div>
+          <!-- buttons -->
+          <div class="flex gap-16 flex-wrap">
+            <div>
+              <div class="text-xl">Обязательно надо зайти❗</div>
+              <ul class="flex flex-row flex-wrap gap-3 text-lg text-black dark:text-white mt-2">
+                <a
+                  class="p-2 px-2 dark:bg-indigo-600 bg-indigo-500 text-white text-center rounded-md transition-all md:hover:scale-110"
+                  target="_blank"
+                  href="https://discord.gg/mQmNCHXDbR">13CM</a>
+                <a
+                  class="p-2 px-2 dark:bg-indigo-600 bg-indigo-500 text-white text-center rounded-md transition-all md:hover:scale-110"
+                  target="_blank"
+                  href="https://discord.gg/Y9bzEbmDWp">PARADEEVICH</a>
+				        <a
+                  class="p-2 px-2 dark:bg-indigo-600 bg-indigo-500 text-white text-center rounded-md transition-all md:hover:scale-110"
+                  target="_blank"
+                  href="https://discord.gg/9JW7xAkM9P">Cramberry</a>
+              </ul>
+            </div>
+            <div>
+              <div class="text-xl">Соц. Сети</div>
+              <ul
+                class="flex flex-row flex-wrap gap-3 text-lg text-black dark:text-white mt-2">
+                <a
+                  class="p-2 px-2 dark:bg-indigo-600 bg-indigo-500 text-white text-center rounded-md transition-all md:hover:scale-110"
+                  target="_blank"
+                  href="https://discord.com/users/328097257792602113">Discord</a>
+                <a
+                  class="p-2 px-2 dark:bg-indigo-600 bg-indigo-500 text-white text-center rounded-md transition-all md:hover:scale-110"
+                  target="_blank"
+                  href="https://github.com/osmyzov">GitHub</a>
+                <a
+                  class="p-2 px-2 dark:bg-indigo-600 bg-indigo-500 text-white text-center rounded-md transition-all md:hover:scale-110"
+                  target="_blank"
+                  href="https://www.twitch.tv/osmuzov">Twitch</a>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
 </html>
