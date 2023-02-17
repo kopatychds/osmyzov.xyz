@@ -1,0 +1,51 @@
+<!-- сделано кривыми руками осмузова на тайлвинде :) -->
+<!DOCTYPE html>
+<html class="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
+    <title>osmuzov</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        content: ["./src/**/*.{html,js}"],
+        theme: {
+          extend: {},
+        },
+        plugins: [],
+      };
+      console.warn("Да-да, иди нахуй тайлвинд!");
+    </script>
+    <script>
+      const changeTheme = () => {
+        const html = document.querySelector(":root");
+        const theme = html.getAttribute("class");
+        html.setAttribute("class", `${theme === "dark" ? "light" : "dark"}`);
+      };
+    </script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body class="dark:bg-gray-900 block h-full text-black dark:text-white">
+    <div class="lg:mt-5 lg:mb-5 lg:container mx-auto bg-gray-50 dark:bg-gray-800 rounded-md shadow-md">
+      <div class="flex flex-col p-8">
+        <header class="flex justify-between items-center mb-5">
+          <div class="lg:text-5xl text-3xl"></div>
+          <button
+            onclick="changeTheme()"
+            class="text-xl hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">Это чё?</button>
+        </header>
+        <main class="flex flex-col gap-8">
+            <div class="flex h-full justify-center">
+                <div class="block w-96 h-96 bg-white dark:bg-gray-900 rounded-md shadow-md">
+                  <img class="w-96 h-96" src="./images/akinov.jpg" alt="ты не видишь легенду 😓">
+                </div>
+            </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
