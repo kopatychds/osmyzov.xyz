@@ -20,83 +20,10 @@
       };
       console.warn("Да-да, иди нахуй тайлвинд!");
     </script>
-    <script>
-      const changeTheme = () => {
-        const html = document.querySelector(":root");
-        const theme = html.getAttribute("class");
-        html.setAttribute("class", `${theme === "dark" ? "light" : "dark"}`);
-      };
-    </script>
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body class="dark:bg-gray-900 block h-full text-black dark:text-white">
-    <div
-      class="xl:mt-5 xl:mb-5 xl:container mx-auto bg-gray-50 dark:bg-gray-800 rounded-md shadow-md">
-      <div class="flex flex-col p-8">
-        <header class="flex justify-between items-center mb-5">
-          <div class="lg:text-5xl text-3xl"><strong>Привет 👋</strong></div>
-          <button
-            onclick="changeTheme()"
-            class="text-xl hover:text-indigo-600 dark:hover:text-indigo-400 transition-all">Это чё?</button>
-        </header>
-        <main class="flex flex-col gap-8">
-          <div class="text-3xl dark:text-gray-400 text-gray-600">
-            <p>
-              Я осмузов,<br />
-              ээм, мне ейтин годиков,<br />
-              <code><i>долбаеб.</i></code>
-            </p>
-          </div>
-          <!-- buttons -->
-          <div class="flex gap-16 flex-wrap">
-            <div>
-              <div class="text-xl">Обязательно надо зайти❗</div>
-              <ul class="flex flex-row flex-wrap gap-3 text-lg text-black dark:text-white mt-2">
-                <a
-                  class="p-2 px-2 dark:bg-indigo-600 bg-indigo-500 text-white text-center rounded-md transition-all md:hover:scale-110"
-                  target="_blank"
-                  href="https://discord.gg/mQmNCHXDbR">13CM</a>
-                <a
-                  class="p-2 px-2 dark:bg-indigo-600 bg-indigo-500 text-white text-center rounded-md transition-all md:hover:scale-110"
-                  target="_blank"
-                  href="https://discord.gg/Y9bzEbmDWp">PARADEEVICH</a>
-				        <a
-                  class="p-2 px-2 dark:bg-indigo-600 bg-indigo-500 text-white text-center rounded-md transition-all md:hover:scale-110"
-                  target="_blank"
-                  href="https://discord.gg/9JW7xAkM9P">Cramberry</a>
-              </ul>
-            </div>
-            <div>
-              <div class="text-xl">Соц. Сети</div>
-              <ul
-                class="flex flex-row flex-wrap gap-3 text-lg text-black dark:text-white mt-2">
-                <a
-                  class="p-2 px-2 dark:bg-indigo-600 bg-indigo-500 text-white text-center rounded-md transition-all md:hover:scale-110"
-                  target="_blank"
-                  href="https://discord.com/users/328097257792602113">Discord</a>
-                <a
-                  class="p-2 px-2 dark:bg-indigo-600 bg-indigo-500 text-white text-center rounded-md transition-all md:hover:scale-110"
-                  target="_blank"
-                  href="https://github.com/osmyzov">GitHub</a>
-                <a
-                  class="p-2 px-2 dark:bg-indigo-600 bg-indigo-500 text-white text-center rounded-md transition-all md:hover:scale-110"
-                  target="_blank"
-                  href="https://www.twitch.tv/osmuzov">Twitch</a>
-              </ul>
-            </div>
-            <div>
-              <div class="text-xl">Не знаю что тут написать</div>
-              <ul
-                class="flex flex-row flex-wrap gap-3 text-lg text-black dark:text-white mt-2">
-                <a
-                  class="p-2 px-2 dark:bg-indigo-600 bg-indigo-500 text-white text-center rounded-md transition-all md:hover:scale-110"
-                  target="_blank"
-                  href="./akinov">Легенда</a>
-              </ul>
-            </div>
-          </div>
-        </main>
-      </div>
+    <h1 class="m-5 text-5xl font-semibold antialiased">Работаем емае</h1>
     </div>
   </body>
 </html>
